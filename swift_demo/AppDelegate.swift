@@ -19,7 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let rootViewController = ViewController()
-        self.window?.rootViewController = rootViewController
+        
+        // 添加导航
+        let navController = UINavigationController(rootViewController: rootViewController)
+        
+        self.window?.rootViewController = navController
         
         return true
     }

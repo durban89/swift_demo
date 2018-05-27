@@ -15,17 +15,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 导航控制
+        self.title = "Navigation"
+        let rightItem = UIBarButtonItem(title: "Next Page", style: .plain, target: self, action: #selector(self.nextPage))
+        self.navigationItem.rightBarButtonItem = rightItem
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.white
         
         // UILabel
-        var rect = CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44)
+        var rect = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: 44)
         label = UILabel(frame: rect)
         label!.text = "Label"
         label!.backgroundColor = UIColor.red
         
         // UIButton
-        rect = CGRect(x: 0, y: label!.bounds.origin.y + 20 + 44, width: UIScreen.main.bounds.width, height: 44)
+        rect = CGRect(x: 0, y: label!.bounds.origin.y + 70 + 44, width: UIScreen.main.bounds.width, height: 44)
         let button = UIButton(frame: rect)
         button.backgroundColor = UIColor.blue
         button.setTitle("Click me", for: UIControlState.normal)
@@ -44,6 +50,13 @@ class ViewController: UIViewController {
         clickCount += 1
         print("I am clicked \(clickCount) times!")
         label!.text = "UIButton is clicked \(clickCount) times";
+    }
+    
+    @objc func nextPage() {
+        print("Next Page")
+        
+        let secondViewController = SecondViewController()
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
 
 }
