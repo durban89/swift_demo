@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F31D71220BC3C08000CC4E8 /* FontSizeChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */; };
 		5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */; };
 		5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44D20BAC04A00933AA4 /* ViewController.swift */; };
 		5FBDB45120BAC04A00933AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDB44F20BAC04A00933AA4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeChangeDelegate.swift; sourceTree = "<group>"; };
 		5FBDB44820BAC04A00933AA4 /* swift_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBDB44D20BAC04A00933AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				5FBDB45A20BAC04A00933AA4 /* Info.plist */,
 				5FBDB45220BAC04A00933AA4 /* swift_demo.xcdatamodeld */,
 				5FBDB47C20BAF87B00933AA4 /* SecondViewController.swift */,
+				5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */,
 			);
 			path = swift_demo;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5FBDB47D20BAF87B00933AA4 /* SecondViewController.swift in Sources */,
 				5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */,
 				5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */,
+				5F31D71220BC3C08000CC4E8 /* FontSizeChangeDelegate.swift in Sources */,
 				5FBDB45420BAC04A00933AA4 /* swift_demo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

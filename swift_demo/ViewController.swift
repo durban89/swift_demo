@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FontSizeChangeDelegate {
     var clickCount:Int = 0
     var label: UILabel?
+    var textLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,19 +32,33 @@ class ViewController: UIViewController {
         label!.backgroundColor = UIColor.red
         
         // UIButton
-        rect = CGRect(x: 0, y: label!.bounds.origin.y + 70 + 44, width: UIScreen.main.bounds.width, height: 44)
+        rect = CGRect(x: 0, y: rect.origin.y + 44, width: UIScreen.main.bounds.width, height: 44)
         let button = UIButton(frame: rect)
         button.backgroundColor = UIColor.blue
         button.setTitle("Click me", for: UIControlState.normal)
         button.addTarget(self, action: #selector(self.clickHandle(sender:)), for: UIControlEvents.touchUpInside)
-
+        
+        print(rect)
+        // UILabel
+        rect = CGRect(x: 0, y: rect.origin.y + 44, width: UIScreen.main.bounds.width, height: 44)
+        print(rect)
+        textLabel = UILabel(frame: rect)
+        textLabel!.text = "会变大的字体"
+        textLabel!.backgroundColor = UIColor.brown
+        
         self.view.addSubview(label!)
         self.view.addSubview(button)
+        self.view.addSubview(textLabel!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func fontSizeDidChange(controller: SecondViewController, fontSize: Int) {
+        print("controller \(controller), fontSize \(fontSize)")
+        textLabel?.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
     }
     
     @objc func clickHandle(sender: UIButton) {
@@ -56,6 +71,7 @@ class ViewController: UIViewController {
         print("Next Page")
         
         let secondViewController = SecondViewController()
+        secondViewController.delegate = self
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
 

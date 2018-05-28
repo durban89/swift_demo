@@ -9,7 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    var fontSize: Int = 20
+    var delegate: FontSizeChangeDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Next Page"
@@ -19,13 +21,21 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // UIButton
-        let rect = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: 44)
+        var rect = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: 44)
         let button = UIButton(frame: rect)
         button.backgroundColor = UIColor.blue
         button.setTitle("Return Pre Page", for: UIControlState.normal)
         button.addTarget(self, action: #selector(self.returnClickHandle(sender:)), for: UIControlEvents.touchUpInside)
         
+        // UIButton
+        rect = CGRect(x: 0, y: rect.origin.y + 44, width: UIScreen.main.bounds.width, height: 44)
+        let changeFontSizeButton = UIButton(frame: rect)
+        changeFontSizeButton.setTitle("增加字体大小", for: UIControlState.normal)
+        changeFontSizeButton.backgroundColor = UIColor.gray
+        changeFontSizeButton.addTarget(self, action: #selector(self.changeFontSize), for: UIControlEvents.touchUpInside)
+        
         self.view.addSubview(button)
+        self.view.addSubview(changeFontSizeButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,5 +56,14 @@ class SecondViewController: UIViewController {
     
     @objc func returnClickHandle(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func changeFontSize() {
+        fontSize += 1
+        print("增加字体大小 \(fontSize)")
+        
+        if ((delegate) != nil) {
+            delegate!.fontSizeDidChange(controller: self, fontSize: fontSize)
+        }
     }
 }
