@@ -38,17 +38,24 @@ class ViewController: UIViewController, FontSizeChangeDelegate {
         button.setTitle("Click me", for: UIControlState.normal)
         button.addTarget(self, action: #selector(self.clickHandle(sender:)), for: UIControlEvents.touchUpInside)
         
-        print(rect)
         // UILabel
         rect = CGRect(x: 0, y: rect.origin.y + 44, width: UIScreen.main.bounds.width, height: 44)
-        print(rect)
         textLabel = UILabel(frame: rect)
         textLabel!.text = "会变大的字体"
         textLabel!.backgroundColor = UIColor.brown
         
+        // UIButton
+        rect = CGRect(x: 0, y: rect.origin.y + 44, width: UIScreen.main.bounds.width, height: 44)
+        let tabbarButton = UIButton(frame: rect)
+        tabbarButton.setTitle("Go Tabbar Page", for: UIControlState.normal)
+        tabbarButton.backgroundColor = UIColor.yellow
+        tabbarButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+        tabbarButton.addTarget(self, action: #selector(self.goTabbarPage(sender:)), for: UIControlEvents.touchUpInside)
+        
         self.view.addSubview(label!)
         self.view.addSubview(button)
         self.view.addSubview(textLabel!)
+        self.view.addSubview(tabbarButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,6 +80,11 @@ class ViewController: UIViewController, FontSizeChangeDelegate {
         let secondViewController = SecondViewController()
         secondViewController.delegate = self
         self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    @objc func goTabbarPage(sender: UIButton) {
+        let tabbarViewController = TabBarViewController()
+        self.navigationController?.pushViewController(tabbarViewController, animated: true)
     }
 
 }

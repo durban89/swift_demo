@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5F31D71220BC3C08000CC4E8 /* FontSizeChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */; };
+		5F31D71420BC44E9000CC4E8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71320BC44E9000CC4E8 /* TabBarViewController.swift */; };
+		5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */; };
+		5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */; };
+		5F31D71A20BC46EE000CC4E8 /* Tabbar3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */; };
 		5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */; };
 		5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44D20BAC04A00933AA4 /* ViewController.swift */; };
 		5FBDB45120BAC04A00933AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDB44F20BAC04A00933AA4 /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeChangeDelegate.swift; sourceTree = "<group>"; };
+		5F31D71320BC44E9000CC4E8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar1ViewController.swift; sourceTree = "<group>"; };
+		5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar2ViewController.swift; sourceTree = "<group>"; };
+		5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar3ViewController.swift; sourceTree = "<group>"; };
 		5FBDB44820BAC04A00933AA4 /* swift_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBDB44D20BAC04A00933AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */,
+				5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */,
 				5FBDB44D20BAC04A00933AA4 /* ViewController.swift */,
 				5FBDB44F20BAC04A00933AA4 /* Main.storyboard */,
 				5FBDB45520BAC04A00933AA4 /* Assets.xcassets */,
@@ -112,6 +121,9 @@
 				5FBDB45220BAC04A00933AA4 /* swift_demo.xcdatamodeld */,
 				5FBDB47C20BAF87B00933AA4 /* SecondViewController.swift */,
 				5F31D71120BC3C08000CC4E8 /* FontSizeChangeDelegate.swift */,
+				5F31D71320BC44E9000CC4E8 /* TabBarViewController.swift */,
+				5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */,
+				5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */,
 			);
 			path = swift_demo;
 			sourceTree = "<group>";
@@ -268,11 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */,
 				5FBDB47D20BAF87B00933AA4 /* SecondViewController.swift in Sources */,
 				5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */,
+				5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */,
 				5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */,
 				5F31D71220BC3C08000CC4E8 /* FontSizeChangeDelegate.swift in Sources */,
+				5F31D71420BC44E9000CC4E8 /* TabBarViewController.swift in Sources */,
 				5FBDB45420BAC04A00933AA4 /* swift_demo.xcdatamodeld in Sources */,
+				5F31D71A20BC46EE000CC4E8 /* Tabbar3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
