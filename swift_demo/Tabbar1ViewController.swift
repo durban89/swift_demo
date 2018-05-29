@@ -13,7 +13,6 @@ class Tabbar1ViewController: UIViewController, UITableViewDelegate, UITableViewD
     var dataArr = NSMutableArray();
     var tableView: UITableView?;
     var urlPath = "http://127.0.0.1/json_demo.php"
-    var connection: NSURLConnection?
     var recvData = Data()
     
     override func viewDidLoad() {
@@ -65,7 +64,7 @@ class Tabbar1ViewController: UIViewController, UITableViewDelegate, UITableViewD
         let request = URLRequest(url: url!)
         
         // 创建连接
-        connection = NSURLConnection(request: request, delegate: self)
+        NSURLConnection(request: request, delegate: self)
     }
     
     public func connection(_ connection: NSURLConnection, didReceive response: URLResponse) {

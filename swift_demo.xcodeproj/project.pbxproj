@@ -13,6 +13,7 @@
 		5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */; };
 		5F31D71A20BC46EE000CC4E8 /* Tabbar3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */; };
 		5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E27CF20BCEB620072EA2A /* PersonModel.swift */; };
+		5F8E27D220BD207F0072EA2A /* PersonStructModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */; };
 		5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */; };
 		5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44D20BAC04A00933AA4 /* ViewController.swift */; };
 		5FBDB45120BAC04A00933AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDB44F20BAC04A00933AA4 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar2ViewController.swift; sourceTree = "<group>"; };
 		5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar3ViewController.swift; sourceTree = "<group>"; };
 		5F8E27CF20BCEB620072EA2A /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStructModel.swift; sourceTree = "<group>"; };
 		5FBDB44820BAC04A00933AA4 /* swift_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBDB44D20BAC04A00933AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */,
 				5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */,
 				5F8E27CF20BCEB620072EA2A /* PersonModel.swift */,
+				5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */,
 			);
 			path = swift_demo;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				5FBDB47D20BAF87B00933AA4 /* SecondViewController.swift in Sources */,
 				5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */,
 				5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */,
+				5F8E27D220BD207F0072EA2A /* PersonStructModel.swift in Sources */,
 				5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */,
 				5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */,
 				5F31D71220BC3C08000CC4E8 /* FontSizeChangeDelegate.swift in Sources */,
