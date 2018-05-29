@@ -12,6 +12,7 @@
 		5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */; };
 		5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */; };
 		5F31D71A20BC46EE000CC4E8 /* Tabbar3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */; };
+		5F50DD4720BD976F0025C5DE /* SomeFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F50DD4620BD976F0025C5DE /* SomeFunc.swift */; };
 		5F86A1C420BD8B13007D11D1 /* QWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F86A1C320BD8B13007D11D1 /* QWImageView.m */; };
 		5F86A1C920BD9383007D11D1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5F86A1C820BD9383007D11D1 /* images */; };
 		5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E27CF20BCEB620072EA2A /* PersonModel.swift */; };
@@ -50,6 +51,7 @@
 		5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar1ViewController.swift; sourceTree = "<group>"; };
 		5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar2ViewController.swift; sourceTree = "<group>"; };
 		5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar3ViewController.swift; sourceTree = "<group>"; };
+		5F50DD4620BD976F0025C5DE /* SomeFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFunc.swift; sourceTree = "<group>"; };
 		5F86A1C120BD8B12007D11D1 /* swift_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F86A1C220BD8B13007D11D1 /* QWImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWImageView.h; sourceTree = "<group>"; };
 		5F86A1C320BD8B13007D11D1 /* QWImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWImageView.m; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				5F8E27CF20BCEB620072EA2A /* PersonModel.swift */,
 				5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */,
 				5F86A1C120BD8B12007D11D1 /* swift_demo-Bridging-Header.h */,
+				5F50DD4620BD976F0025C5DE /* SomeFunc.swift */,
 			);
 			path = swift_demo;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */,
 				5FBDB47D20BAF87B00933AA4 /* SecondViewController.swift in Sources */,
+				5F50DD4720BD976F0025C5DE /* SomeFunc.swift in Sources */,
 				5F86A1C420BD8B13007D11D1 /* QWImageView.m in Sources */,
 				5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */,
 				5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */,

@@ -8,12 +8,21 @@
 
 #import "QWImageView.h"
 
+// 如果oc要调用swift里面的方法，需要包含这个固定的头文件
+// 项目名称 #ProjectName#-Swift.h
+#import <swift_demo-Swift.h>
+
 @implementation QWImageView
 
 - (void) addTarget: (id)target withSelector: (SEL)sel {
     _target = target;
     _sel = sel;
     self.userInteractionEnabled = YES;
+    
+    // 调用swift的方法
+    SomeFunc *someFunc = [[SomeFunc alloc] init];
+    [someFunc getSomeValue];
+    
 }
 
 - (void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
