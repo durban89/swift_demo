@@ -34,8 +34,17 @@ class SecondViewController: UIViewController {
         changeFontSizeButton.backgroundColor = UIColor.gray
         changeFontSizeButton.addTarget(self, action: #selector(self.changeFontSize), for: UIControlEvents.touchUpInside)
         
+        // UIImage UIImageView
+        rect = CGRect(x: 0, y: rect.origin.y + 44, width: 100, height: 100)
+        let img = UIImage(named: "demo-image.png")
+        let imgView = QWImageView(frame: rect)
+        imgView.image = img
+        imgView.addTarget(self, with: #selector(self.imageClick(sender:)))
+        imgView.backgroundColor = UIColor.yellow
+        
         self.view.addSubview(button)
         self.view.addSubview(changeFontSizeButton)
+        self.view.addSubview(imgView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +52,9 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func imageClick(sender: QWImageView) {
+        print("Click ImageView")
+    }
 
     /*
     // MARK: - Navigation

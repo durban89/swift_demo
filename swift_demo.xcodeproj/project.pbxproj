@@ -12,6 +12,8 @@
 		5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */; };
 		5F31D71820BC46E2000CC4E8 /* Tabbar2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */; };
 		5F31D71A20BC46EE000CC4E8 /* Tabbar3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */; };
+		5F86A1C420BD8B13007D11D1 /* QWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F86A1C320BD8B13007D11D1 /* QWImageView.m */; };
+		5F86A1C920BD9383007D11D1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5F86A1C820BD9383007D11D1 /* images */; };
 		5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E27CF20BCEB620072EA2A /* PersonModel.swift */; };
 		5F8E27D220BD207F0072EA2A /* PersonStructModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */; };
 		5FBDB44C20BAC04A00933AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */; };
@@ -48,6 +50,10 @@
 		5F31D71520BC46D4000CC4E8 /* Tabbar1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar1ViewController.swift; sourceTree = "<group>"; };
 		5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar2ViewController.swift; sourceTree = "<group>"; };
 		5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar3ViewController.swift; sourceTree = "<group>"; };
+		5F86A1C120BD8B12007D11D1 /* swift_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F86A1C220BD8B13007D11D1 /* QWImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWImageView.h; sourceTree = "<group>"; };
+		5F86A1C320BD8B13007D11D1 /* QWImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWImageView.m; sourceTree = "<group>"; };
+		5F86A1C820BD9383007D11D1 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = swift_demo/images; sourceTree = "<group>"; };
 		5F8E27CF20BCEB620072EA2A /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStructModel.swift; sourceTree = "<group>"; };
 		5FBDB44820BAC04A00933AA4 /* swift_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,7 @@
 		5FBDB43F20BAC04A00933AA4 = {
 			isa = PBXGroup;
 			children = (
+				5F86A1C820BD9383007D11D1 /* images */,
 				5FBDB44A20BAC04A00933AA4 /* swift_demo */,
 				5FBDB46220BAC04A00933AA4 /* swift_demoTests */,
 				5FBDB46D20BAC04A00933AA4 /* swift_demoUITests */,
@@ -117,6 +124,8 @@
 			children = (
 				5FBDB44B20BAC04A00933AA4 /* AppDelegate.swift */,
 				5F31D71720BC46E2000CC4E8 /* Tabbar2ViewController.swift */,
+				5F86A1C220BD8B13007D11D1 /* QWImageView.h */,
+				5F86A1C320BD8B13007D11D1 /* QWImageView.m */,
 				5FBDB44D20BAC04A00933AA4 /* ViewController.swift */,
 				5FBDB44F20BAC04A00933AA4 /* Main.storyboard */,
 				5FBDB45520BAC04A00933AA4 /* Assets.xcassets */,
@@ -130,6 +139,7 @@
 				5F31D71920BC46EE000CC4E8 /* Tabbar3ViewController.swift */,
 				5F8E27CF20BCEB620072EA2A /* PersonModel.swift */,
 				5F8E27D120BD207F0072EA2A /* PersonStructModel.swift */,
+				5F86A1C120BD8B12007D11D1 /* swift_demo-Bridging-Header.h */,
 			);
 			path = swift_demo;
 			sourceTree = "<group>";
@@ -220,6 +230,7 @@
 				TargetAttributes = {
 					5FBDB44720BAC04A00933AA4 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					5FBDB45E20BAC04A00933AA4 = {
@@ -259,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F86A1C920BD9383007D11D1 /* images in Resources */,
 				5FBDB45920BAC04A00933AA4 /* LaunchScreen.storyboard in Resources */,
 				5FBDB45620BAC04A00933AA4 /* Assets.xcassets in Resources */,
 				5FBDB45120BAC04A00933AA4 /* Main.storyboard in Resources */,
@@ -288,6 +300,7 @@
 			files = (
 				5F31D71620BC46D4000CC4E8 /* Tabbar1ViewController.swift in Sources */,
 				5FBDB47D20BAF87B00933AA4 /* SecondViewController.swift in Sources */,
+				5F86A1C420BD8B13007D11D1 /* QWImageView.m in Sources */,
 				5F8E27D020BCEB620072EA2A /* PersonModel.swift in Sources */,
 				5FBDB44E20BAC04A00933AA4 /* ViewController.swift in Sources */,
 				5F8E27D220BD207F0072EA2A /* PersonStructModel.swift in Sources */,
@@ -462,12 +475,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D892EHN7E;
 				INFOPLIST_FILE = swift_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.walkerfree.swift-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_demo/swift_demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,12 +493,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D892EHN7E;
 				INFOPLIST_FILE = swift_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.walkerfree.swift-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_demo/swift_demo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
